@@ -1,0 +1,19 @@
+﻿<Window x:Class="InterfazDinamita.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterfazDinamita"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,13,0,0" TextWrapping="Wrap" Text="Nuevo" VerticalAlignment="Top"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="198,12,0,0" VerticalAlignment="Top" Width="74" Click="BtnAgregar_Click"/>
+        <ComboBox x:Name="cbUser" HorizontalAlignment="Left" Margin="60,11,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CbUser_SelectionChanged">
+            <ComboBoxItem>Alumno</ComboBoxItem>
+            <ComboBoxItem>Maestro</ComboBoxItem>
+        </ComboBox>
+        <Grid x:Name="grdUserInterfaz" HorizontalAlignment="Left" Height="253" Margin="10,38,0,0" VerticalAlignment="Top" Width="262"/>
+
+    </Grid>
+</Window>
